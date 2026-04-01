@@ -19,9 +19,8 @@ always_ff @(posedge clk or posedge rst) begin
                 count <= 0;
                 sclk  <= ~sclk;
                 if (sclk == 0)tick <= 1;
-            end else begin
-                count <= count +1;
-            end
+            end else count <= count +1;
+            
         end else begin
             count <= 0;
             sclk <= 0;
