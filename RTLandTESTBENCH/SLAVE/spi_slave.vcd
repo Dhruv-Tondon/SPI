@@ -1,0 +1,170 @@
+$date
+	Sun Aug 30 12:23:03 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module tb_slave $end
+$var wire 8 ! REC_data [7:0] $end
+$var wire 1 " MISO $end
+$var wire 1 # BUSY $end
+$var reg 1 $ CS $end
+$var reg 8 % LOAD_data [7:0] $end
+$var reg 1 & MOSI $end
+$var reg 1 ' rst $end
+$var reg 1 ( sclk $end
+$var reg 1 ) start $end
+$scope module dut $end
+$var wire 1 # BUSY $end
+$var wire 1 $ CS $end
+$var wire 8 * LOAD_data [7:0] $end
+$var wire 1 & MOSI $end
+$var wire 1 ' rst $end
+$var wire 1 ( sclk $end
+$var wire 1 ) start $end
+$var wire 1 + load $end
+$var wire 1 , en $end
+$var wire 8 - REC_data [7:0] $end
+$var wire 1 " MISO $end
+$scope module uut1 $end
+$var wire 1 $ CS $end
+$var wire 1 ' rst $end
+$var wire 1 ) start $end
+$var reg 1 , en $end
+$var reg 1 + load $end
+$upscope $end
+$scope module uut2 $end
+$var wire 8 . LOAD_data [7:0] $end
+$var wire 1 & MOSI $end
+$var wire 1 , en $end
+$var wire 1 + load $end
+$var wire 1 ' rst $end
+$var wire 1 ( sclk $end
+$var reg 1 " MISO $end
+$var reg 8 / REC_data [7:0] $end
+$var reg 8 0 SEND_data [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 0
+b0 /
+b111100 .
+b0 -
+0,
+0+
+b111100 *
+0)
+0(
+1'
+0&
+b111100 %
+1$
+0#
+0"
+b0 !
+$end
+#20
+0'
+#40
+1+
+1#
+1,
+1)
+0$
+#50
+1(
+#100
+b111100 0
+0+
+1#
+1,
+0)
+0(
+#150
+1(
+#200
+b1111000 0
+1&
+0(
+#250
+b1 !
+b1 -
+b1 /
+1(
+#300
+1"
+b11110000 0
+0&
+0(
+#350
+b10 !
+b10 -
+b10 /
+1(
+#400
+b11100000 0
+1&
+0(
+#450
+b101 !
+b101 -
+b101 /
+1(
+#500
+b11000000 0
+0(
+#550
+b1011 !
+b1011 -
+b1011 /
+1(
+#600
+b10000000 0
+0&
+0(
+#650
+b10110 !
+b10110 -
+b10110 /
+1(
+#700
+0"
+b0 0
+1&
+0(
+#750
+b101101 !
+b101101 -
+b101101 /
+1(
+#800
+0&
+0(
+#850
+b1011010 !
+b1011010 -
+b1011010 /
+1(
+#900
+1&
+0(
+#950
+b10110101 !
+b10110101 -
+b10110101 /
+1(
+#1000
+0#
+0,
+1$
+0(
+#1050
+1(
+#1100
+0(

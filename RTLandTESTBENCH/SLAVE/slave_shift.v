@@ -10,40 +10,27 @@ module spi_slave_shift_reg(
 
 logic [7:0] SEND_data;
 
-
-// Receive MOSI on rising edge
+//at rising edge 
 always_ff @(posedge sclk or posedge rst) begin
-
-    if (rst) begin
-        REC_data <= 8'd0;
-    end
-
-    else if (en) begin
-        REC_data <= {REC_data[6:0],MOSI};
-    end
-
+    if (rst) REC_data <= 8'd0;
+    else if (en) REC_data <= {REC_data[6:0],MOSI};
 end
 
-// Transmit MISO on falling edge
+// Transmit at falling edge
 always_ff @(negedge sclk or posedge rst) begin
-
     if (rst) begin
         SEND_data <= 8'd0;
         MISO <= 1'b0;
     end
-
     else if (en) begin
-
         if (load) begin
             SEND_data <= LOAD_data;
             MISO <= LOAD_data[7];
         end
-
         else begin
             SEND_data <= {SEND_data[6:0],1'b0};
             MISO <= SEND_data[6];
         end
-
     end
 
 end
